@@ -1,0 +1,11 @@
+[package]
+name = "binary_crate"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+trpl = "0.3.0"
+async_ex = { path = "/home/gg/Rust/async_exs/async_ex" }
+async_concurrency_ex = { path = "/home/gg/Rust/async_exs/async_concurrency_ex" }
+await_ex = { path = "/home/gg/Rust/async_exs/await_ex" }  
+async_abstraction = { path = "/home/gg/Rust/async_exs/async_abstraction" }
