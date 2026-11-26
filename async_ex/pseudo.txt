@@ -1,0 +1,26 @@
+PSEUDO FOR async_ex
+===================
+
+Import the trpl version 0.3.0 crate
+
+*Create an asynchronous function that returns the title content of a given url.
+*	-Requires a parameter for the url.
+*	-Fetch the data of the url, and its full response text.
+*	-Output the title.
+
+*At the main, 
+	-Initialize a variable to store the url info from command line arguments.
+	-Create a code block that allows a runtime, an asynchronous code block, and ensures 
+	that it finishes.
+		-Take the index of the url from the arguments value and execute the above
+		asynchronous function.
+		-Output messages 'The title for {url} was {title}'
+				'{url} had no title'
+
+*Refactor to race Two urls against each other and output the url that 
+completes first.
+*	-refactor the above asynchronous function to output values that
+	maybe used to output message
+	'{url} returned first'
+	'It's page title was: {title}'
+	or 'It had no title'
