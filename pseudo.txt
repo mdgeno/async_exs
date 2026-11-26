@@ -1,0 +1,21 @@
+PSEUDO FOR TOP LEVEL WORKSPACE
+==============================
+
+*Create a binary crate.
+
+*Make the asynchronous topic examples work starting with async_ex.
+
+*After finishing the 2nd asynchronus topic example, delete the 2 Cargo projects outside the workspace.
+
+*Finish the pseudo of the 17.3 Building Asynchronous Abstractions example
+
+*Code and execute the example programs of 17.3
+
+*THREADS + FUTURES EX. (17-25)
+*Create a channel(trpl? or threads mpsc?)
+
+*Spawn a thread
+	Send values of 1 to 10
+	Make the thread sleep 1 second after sending each value
+
+*Receive the messages asynchronously.

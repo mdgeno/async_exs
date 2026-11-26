@@ -1,0 +1,5 @@
+[workspace]
+resolver = "3"
+members = ["async_abstraction","async_concurrency_ex","async_ex", "await_ex","binary_crate"]
+
+
