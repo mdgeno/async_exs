@@ -1,0 +1,14 @@
+*In the binary crate
+	Initialize a future value that sleeps for 5 seconds, and has a string literal value
+	'Finally Finished'.
+	
+	Put the timeout function from the async_abstractions lib through a match control 
+	flow construct, if it returns ok, output the message 'Succeeded with 'message value'
+	if it returns an error, output the message 'Failed after 'duration secs' seconds'
+
+*Create an asynchronous function that takes a future parameter and compare it to another
+parameter which will be the time limit. 
+If the value of the future becomes available before the set time limit,
+the value is returned with the message 'Succeeded with {value of future}'
+	Otherwise it returns an error, with the message displaying 
+					'Failed after {duration of time limit} seconds'
