@@ -1,0 +1,48 @@
+PSEUDO FOR ASYN_CONCURRENCY_EX
+==============================
+
+*Create 3 spawn tasks??
+
+*Discover the output of 17.2 final example if the async await sequences are rearranged.
+===================================================
+
+*Create two program tasks,
+*	First task goes through 10 steps and each step outputs the message
+	'hi number {} from the first task!'
+	and let it sleep for half a second.
+
+*	Second task is somewhat similar to the above task however with just 5 steps.
+	'hi number {} from the second task!'
+
+*	Make sure that both tasks finish.
+
+*	Refactor by using other methods to that ensure both tasks complete.
+
+*	Go through the async await rearrangement challenges.
+
+CONT.
+Execute the concept of sending messages between channels,
+*	Initialize a producer and consumer channel using the trpl crate.
+
+*	Send the value 'hi'
+
+*	output 'received {value}'
+
+*	Improve the code to send a collection of values
+		'hi', 'from', 'the', 'future'
+		and pausing for half a second after each send.
+
+*	Receive each value and output 'received {value}'.
+
+*	The above will result to the program not doing anything and will remain running
+	until closed manually.
+
+*	Refactor the program that each channel have there own thread, and ensure that 
+	both the futures finish executing.
+
+*	Modify the program to have another producer channel, making it a total of 2
+	senders, where the 2nd sender sends values
+		'more',  'messages', 'for', 'you'
+		and pausing for a second and a half after each send.
+
+*	Ensure that all futures finish executing.
