@@ -1,0 +1,22 @@
+* Create a slow function that takes 2 parameters, a string slice and an integer.
+	the duration of the function is meant to execute according to the 
+	amount of the integer parameter,
+	and output the string slice value with the bellow message output
+	'{name} ran for {ms}ms'
+
+*Initialize two futures that ouputs a message "'a' started."
+	then executes the slow function with parameters (a & 30, 10, 20)
+	have it sleep for 50ms
+	then at the end of the future, output message "'a' finished."
+					     "'b' started."
+	then executes the slow function with parameters (b & 75, 10, 15, 350)
+	have it sleep for 50ms
+	then at the end of the future, output message "'b' finished."
+
+*Race both futures letting the fastest future finish executing first.
+
+
+*Refactor the program so that the futures alternate tasks, and that one future don't starve
+the other.
+
+ 
